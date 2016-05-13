@@ -12,7 +12,7 @@ using System.Threading.Tasks;
  * Description: this program demonstrates GitHub and version control
  * best practices. We also explore unit testing
  * 
- * Version 0.3 - Updated comments for driver class Program
+ * Version 0.4 - extracted method OutputStringToConsole
  */
 namespace Comp123_S2016_Lesson1B
 {
@@ -48,14 +48,29 @@ namespace Comp123_S2016_Lesson1B
             // Initialize Variables
             string UserName = "";
 
-            Console.Write("Enter UserName: ");
+            OutputStringToConsole("Enter UserName: ", true);
             UserName = Console.ReadLine();
 
-            Console.WriteLine("/n==========================");
-            Console.WriteLine("You Entered: " + UserName);
+            Console.WriteLine("\n==========================");
+            Console.WriteLine("You Entered: " + UserName + "\n");
 
             return UserName;
 
+        }
+
+
+        private static string OutputStringToConsole(string outputString, bool hasNewLine)
+        {
+        
+        if (hasNewLine);
+    {
+        Console.WriteLine(outputString);
+            } 
+{
+    Console.Write(outputString);
+}
+        
+                   return outputString;
         }
 
     }
