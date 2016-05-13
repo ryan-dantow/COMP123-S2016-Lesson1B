@@ -12,7 +12,7 @@ using System.Threading.Tasks;
  * Description: this program demonstrates GitHub and version control
  * best practices. We also explore unit testing
  * 
- * Version 0.5 - added lesson 1 unit test
+ * Version 0.6 - refactored line (with some errors)
  */
 namespace Comp123_S2016_Lesson1B
 {
@@ -69,6 +69,8 @@ namespace Comp123_S2016_Lesson1B
 {
     Console.Write(outputString);
 }
+string suffixString = hasNewLine ? "\n" : "";
+Console.Write(outputString + suffixString);
         
                    return outputString;
         }
