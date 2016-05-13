@@ -12,7 +12,7 @@ using System.Threading.Tasks;
  * Description: this program demonstrates GitHub and version control
  * best practices. We also explore unit testing
  * 
- * Version 0.4 - extracted method OutputStringToConsole
+ * Version 0.5 - added lesson 1 unit test
  */
 namespace Comp123_S2016_Lesson1B
 {
@@ -21,7 +21,7 @@ namespace Comp123_S2016_Lesson1B
      * 
      * @class Program
      */
-    class Program
+    public class Program
     {
         /**
          * Main Method for class Program
